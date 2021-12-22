@@ -87,10 +87,8 @@ class DisjointSets
             parent[x] = y;
         }
 
-        /*if(rnkorsize[x] == rnkorsize[y]){
-            //rnkorsize[y]++;
-        }*/
-
+        if (rnkorsize[x] == rnkorsize[y])
+            rnkorsize[y]++;
         //TODO
     }
 };
